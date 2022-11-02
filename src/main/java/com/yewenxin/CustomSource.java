@@ -10,6 +10,7 @@ public class CustomSource {
         env.setParallelism(1);
         DataStreamSource<Event> eventDataStreamSource = env.addSource(new ClickSource());
         eventDataStreamSource.print();
+        System.out.println("hello");
         env.execute();
     }
 }
